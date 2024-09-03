@@ -1,0 +1,218 @@
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+body{
+    counter-set: Serial;     
+}
+.serial_number td:first-child::before{
+    counter-increment: Serial;      
+    content: counter(Serial); 
+}
+.table1 {
+    width: 100%; 
+    border-collapse: collapse; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.table1 .table-head{
+    background-color: #6C7AE0;
+    color: #ffffff; 
+    padding: 10px; 
+    text-align: left;
+}
+.table1 .delete-table-head{
+    background-color: #a82d2d;
+    color: #ffffff; 
+    padding: 10px; 
+    text-align: left;
+}
+.table1 td {
+    border: 1px solid #fafafa;
+    padding: 10px; 
+}
+/* .table1 tr:hover {
+    background-color: #EDECFF; 
+} */
+.eye-btn {
+    background-color: #17A2B8;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.check-btn{
+    background-color: #28b82b;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.del-btn {
+    background-color: #DC3545;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.check-btn:hover {
+    background-color: #249426;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.eye-btn:hover {
+    background-color: #107c8d;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.del-btn:hover {
+    background-color: #b12a38;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 8px;
+}
+
+button[type="search"] {
+    background-color: #0074d9; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button[type="search"]:hover {
+    background-color: #0056b3;
+}
+.pagination-btn {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 8px;
+    margin-right: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pagination-btn:hover {
+background-color: #6C7AE0;
+}
+
+.active-btn {
+background-color: #6C7AE0;
+}
+.delete-pagination-btn {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 8px;
+    margin-right: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.delete-pagination-btn:hover {
+background-color: #a82d2d;
+}
+
+.delete-active-btn {
+background-color: #a82d2d;
+}
+.main-block {
+    display: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom:  300px;
+    background: #bb1717;
+  flex-direction: row;
+  height: calc(100% - 50px);
+  }
+
+  .close-btn{
+    color: black;
+    font-size: 30px;
+  }
+  .show-btn{
+    color: black;
+    font-size: 30px;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  #show:checked ~ .main-block{
+    display: block;
+  }
+  .parcel_id {
+    display: none;
+  }
+
+
+  /* Accept From Driver */
+  /* .text{
+    color: #363636;
+    font-size: 25px;
+  }
+  .horizontal-line {
+    border-bottom: 2px solid #a0a0a0;
+  } */
+  .qr-box{
+    background-color: rgb(240, 240, 240);
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e2e2e2;
+    /* padding: 50px; */
+    margin-top: 30px;
+    margin-left: 330px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .scan-btn {
+    background-color: #17A2B8;
+    width: 300px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 330px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .scan-btn:hover {
+    background-color: #107c8d;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  /* Accept From Driver */
